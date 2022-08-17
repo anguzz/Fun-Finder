@@ -38,43 +38,54 @@
 				-Go have some fun-
 			  </h1>
 			  
+			  <div id="mcontainer">
+				<div id="monitor">
+				  <div id="monitorscreen">
 
-		<select
-		bind:value={selectedOption}
-		on:change={() => {
-		  loading = false;
-		  selectedRandomOption = "";
-		}}	>
-		<option value="">------</option>
-		{#each OPTIONS as randomOption}
-		  <option value={randomOption}>
-					  <h2 class="text_shadows"> {randomOption.displayText}</h2>
-		  </option>
-		{/each}
-	  </select>
-  
-	  <button on:click={handleRandomize} disabled={!selectedOption || loading}>
-		Randomize!
-	  </button>
-	
-	  <div class="selected-option">
-		{#if selectedRandomOption && !loading}
-		<div class="content">
-		  <h2 class="text_shadows">	{selectedRandomOption}</h2>
-		</div>	
-		{/if}
-		{#if loading === true}
-		<div class="waviy">
-		  <span style="--i:1">.</span>
-		  <span style="--i:2">.</span>
-		  <span style="--i:3">.</span>
-		  <span style="--i:4">.</span>
-		  <span style="--i:5">.</span>
-		  <span style="--i:6">.</span>
-		  <span style="--i:7">.</span>
-		 </div>
-	  
-		{/if}
+					<select
+					bind:value={selectedOption}
+					on:change={() => {
+					  loading = false;
+					  selectedRandomOption = "";
+					}}	>
+					<option value="">------</option>
+					{#each OPTIONS as randomOption}
+					  <option value={randomOption}>
+								  <h2 class="text_shadows"> {randomOption.displayText}</h2>
+					  </option>
+					{/each}
+				  </select>
+			  
+				  <button on:click={handleRandomize} disabled={!selectedOption || loading}>
+					Randomize!
+				  </button>
+				
+				  <div class="selected-option">
+					{#if selectedRandomOption && !loading}
+					<div class="content">
+					  <h2 class="text_shadows">	{selectedRandomOption}</h2>
+					</div>	
+					{/if}
+					{#if loading === true}
+					<div class="waviy">
+					  <span style="--i:1">.</span>
+					  <span style="--i:2">.</span>
+					  <span style="--i:3">.</span>
+					  <span style="--i:4">.</span>
+					  <span style="--i:5">.</span>
+					  <span style="--i:6">.</span>
+					  <span style="--i:7">.</span>
+					 </div>
+				  
+					{/if}
+
+
+				  </div>
+				</div>
+			  </div>
+
+
+		
 
 	   </div>
 	</div>
@@ -332,6 +343,80 @@
 	}
 	 0% {
 		 text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #5271ff, 0 0 73px #5271ff, 0 0 80px #5271ff, 0 0 94px #5271ff, 0 0 140px #5271ff;
+	}
+}
+
+
+
+/**============================monitor css ============================================*/
+
+
+
+#container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#monitor {
+	background: #000; 
+	position: relative;
+	border-top: 3px solid #888; 
+	margin: 5%;
+	padding: 2% 2% 4% 2%; 
+	border-radius: 10px; 
+	border-bottom-left-radius: 50% 2%; 
+	border-bottom-right-radius: 50% 2%; 
+	transition: margin-right 1s;
+}
+
+#monitor:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 3%;
+	left: 36%;
+	height: .5%; 
+	width: 28%;
+	background: #ddd; 
+	border-radius: 50%; 
+	box-shadow: 0 0 3px 0 white; 
+}
+
+#monitorscreen {
+	position: relative;
+  background-color: #777;
+	background-size: cover; 
+	background-position: top center;
+	height: 0; 
+	padding-bottom: 56.25%; 
+	position: relative;
+	overflow: hidden;
+}
+
+
+@media all and (min-width: 960px) {
+	#monitor {
+		-webkit-animation: tvflicker .2s infinite alternate; 
+		-moz-animation:    tvflicker .5s infinite alternate; 
+		-o-animation:      tvflicker .5s infinite alternate; 
+		animation:         tvflicker .5s infinite alternate; 
+	}
+
+	@-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+	  100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
 	}
 }
   </style>
