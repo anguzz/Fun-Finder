@@ -86,6 +86,10 @@
 	color: #1F2937;
 	background-color: #1F2937;
 	border-radius:10px;
+	
+		padding: 0;
+		margin: 0 auto;
+		width:70%;
   }
   button {
     cursor: pointer;
@@ -217,12 +221,12 @@
 		 transform: translate(0px, 0px);
 	}
 }
-/**loading animation */
+/* --------------------------------------------------loading animation --------------------------------------------------*/
 
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-  font-size: 60px;
+  font-size: calc(1.5rem + 3vw);
 }
 .waviy span {
   position: relative;
