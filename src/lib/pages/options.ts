@@ -9,7 +9,7 @@ export const OPTIONS = [
         "Buffalo Wild Wings",
         "Dominos",
         "Jersey Mikes",
-        "Random mexican Taco truck",
+        "Taco truck",
         "Jack in the box",
         "In-n-Out",
         "Pho",
@@ -104,7 +104,7 @@ export const OPTIONS = [
         "Donuttery",
         "Dunkin",
         "Krispy Kreme",
-        "85°C Bakery Cafe",
+        "85°C",
       ],
     },
   ];
