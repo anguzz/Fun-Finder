@@ -42,7 +42,7 @@ export const OPTIONS = [
       options: [
         "Cheesecake Factory",
         "Olive Garden",
-        "Bucca De Beppo",
+        "Buca Di Beppo",
         "BCD Tofu House",
         "Kbbq",
         "Shabu Shabu",
