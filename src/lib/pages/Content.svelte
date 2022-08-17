@@ -1,9 +1,8 @@
 <script lang="ts">
 	import Anchor from "$lib/components/Anchor.svelte";
 
-  import { neutralBackground } from "$lib/utils/constants";
  
-  export let backgroundClass = neutralBackground;
+  
 
   import {OPTIONS} from "$lib/pages/options.js";
   let selectedOption: { options: string|any[]; };
@@ -31,16 +30,18 @@
 	class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
 	id="bg"
   >
-  <div class="container">
-	<div class="row">
-	   <div class="neons col-12">
-			  </div>
-			</div>
-	
+
 
 		<div class="page-wrapper">
 
-			<h3 class="animate-charcter"> Go and have some fun! </h3><br>
+			<div class="container">
+				<div class="row">
+				   <div class="neons col-12">
+					  <h1><em>Go out and have some fun!</em></h1>
+				   </div>
+				</div>
+			  </div>
+			  <br>
 
 		<select
 		bind:value={selectedOption}
@@ -81,8 +82,7 @@
 
 	   </div>
 	</div>
-  </div>  
-  </div>
+
   </section>
   
   <style>
@@ -127,18 +127,6 @@
 	 font-family: 'Codystar';
   }
   
-  .neons {
-	 text-align: center;
-  }
-  
-  .neons h1 {
-	font-size: calc(3.5rem + 4vw);
-	text-align: center;
-	 font-weight: bold;
-	-webkit-animation: glow 2s ease-in-out infinite alternate;
-	-moz-animation: glow 2s ease-in-out infinite alternate;
-	animation: glow 2s ease-in-out infinite alternate;
-  }
   
   @-webkit-keyframes glow {
 	   from {
@@ -218,17 +206,7 @@
 	 --color-quaternary: #6aa4f0;
 	 --color-quinary: #0c2363;
 }
- body {
-	 min-height: 100vh;
-	 font-family: canada-type-gibson, sans-serif;
-	 font-weight: 300;
-	 font-size: .8rem;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 overflow: hidden;
-	 background-color: #eff8e2;
-}
+
  .content {
 	 display: flex;
 	 align-content: center;
@@ -332,33 +310,38 @@
   }
 }
 /**============================title css ============================================*/
-.animate-charcter
-{
-	
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #319be2 0%,
-    #22c1dd 29%,
-    #132bff 67%,
-    #91def1 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
 
-  background-clip: text;
+ @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: calc(1.5rem + 1vw);
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
 }
 
-@keyframes textclip {
+.neons {
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: calc(1.5rem + 2vw);
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
   to {
-    background-position: 200% center;
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
   }
 }
   </style>
