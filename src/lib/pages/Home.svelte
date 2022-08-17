@@ -67,7 +67,7 @@ body {
 }
 
 .neons h1 {
-  font-size: 9rem;
+  font-size: 7rem;
   text-align: center;
    font-weight: bold;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
