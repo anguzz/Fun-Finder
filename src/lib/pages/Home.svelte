@@ -2,7 +2,6 @@
   import Anchor from "$lib/components/Anchor.svelte";
 
  
-
 </script>
 
 
@@ -23,13 +22,21 @@
 </div>
 </section>
 
+
+
+
+
+
+
+
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
   #bg {
     width: 100%;
   height: 100vh;
   color: #fff;
   background-image: url("/src/bricks.jpg");
-	background-size: 120% 120%;
+	background-size: 120% 120%; 
   position: relative;
   animation: change 10s ease-in-out infinite;
   }
@@ -56,17 +63,16 @@
 }
  
   /* --------------------------  title css--------------------------*/
-  @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
 body {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-family: 'Codystar';
 }
 
 .neons {
    text-align: center;
+   font-family: 'Codystar';
 }
 
 .neons h1 {

@@ -317,11 +317,12 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-family: 'Codystar';
+   
 }
 
 .neons {
    text-align: center;
+   font-family: 'Codystar';
 }
 
 .neons h1 {
