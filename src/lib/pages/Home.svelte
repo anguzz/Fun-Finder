@@ -7,7 +7,9 @@
  
 </script>
 
-<Anchor id="home" />
+
+<section>
+  <Anchor id="home" />
 <div
   class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
   id="bg"
@@ -21,19 +23,41 @@
 </div>
 
 </div>
-
+</section>
 
 <style>
   #bg {
-    /* The image used background-image: url("/assets/images/background1.jpg"); */
-    background-image: linear-gradient(217deg, rgba(0, 248, 165, 0.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0, 4, 255, 0.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(248, 248, 248, 0.8), rgba(0,0,255,0) 70.71%);
-    
+    width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
   }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0 50%;
+  }
+}
  
-  /*  */
+  /* --------------------------  title css--------------------------*/
   @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
 body {
@@ -48,7 +72,7 @@ body {
 }
 
 .neons h1 {
-  font-size: 7rem;
+  font-size: calc(3.5rem + 4vw);
   text-align: center;
    font-weight: bold;
   -webkit-animation: glow 2s ease-in-out infinite alternate;

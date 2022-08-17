@@ -29,7 +29,7 @@
       id: "#content",
       route: "/content",
       name: "content",
-      title: "content",
+      title: "Fun",
     },
 
   ];
