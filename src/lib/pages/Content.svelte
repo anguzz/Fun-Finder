@@ -40,7 +40,7 @@
 
 		<div class="page-wrapper">
 
-			<h3 class="animate-charcter"> Get some ideas to go out there and have some fun! </h3><br>
+			<h3 class="animate-charcter"> Go and have some fun! </h3><br>
 
 		<select
 		bind:value={selectedOption}
