@@ -2,7 +2,6 @@ export const OPTIONS = [
     {
       displayText: "Fast/casual Food",
       options: [
-        "Chipotle",
         "McDonalds",
         "Subway",
         "DQ Grill & Chill",
@@ -18,7 +17,9 @@ export const OPTIONS = [
         "Sushi",
         "Poke",
         "Jollibee",
-        "Dave's hot chicken",
+        "Dave's hot chicken",  
+        "Chipotle",
+        "Waba-grill",
       ],
     },
     {
@@ -31,7 +32,8 @@ export const OPTIONS = [
         "Smash Bros.",
         "Skribble.io",
         "Minecraft",
-        "BattleBlock",
+        "BattleBlock Theatre",
+        "Terraria",
         "Human Fall Flat",
         "Castle Crashers",
       ],
