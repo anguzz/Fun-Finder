@@ -1,8 +1,8 @@
 <script lang="ts">
   import Page from "$lib/components/Page.svelte";
-  import { primaryBackground } from "$lib/utils/constants";
+  import { neutralBackground } from "$lib/utils/constants";
  
-  export let backgroundClass = primaryBackground;
+  export let backgroundClass = neutralBackground;
 
   import {OPTIONS} from "$lib/pages/options.js";
   let selectedOption: { options: string|any[]; };
@@ -77,11 +77,7 @@
 
 
 <style>
-   h1 {
-    font-size: clamp(2rem, 5vw, 6rem);
-    color: #6ccee7;
-	
-  }
+  
   .page-wrapper {
 	
     text-align: center;

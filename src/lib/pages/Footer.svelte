@@ -76,21 +76,9 @@ box-shadow: 1px -5px var(--blur) rgba(0, 0, 0, 0.3);
 * {
 transition: all 0.3s ease;
 }
-.divider {
-filter: blur(1px);
-}
-input,
-textarea {
-background-color: var(--comp-primary);
-color: var(--black);
-}
-.nav-modal {
-background-color: var(--primary);
-}
-button {
-background-color: var(--comp-primary);
-color: var(--primary);
-}
+
+
+
 .social-wrapper {
 background-color: #111827;
 border: 1px solid var(--comp-primary);
