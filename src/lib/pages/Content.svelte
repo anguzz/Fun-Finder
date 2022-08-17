@@ -172,7 +172,7 @@
 	
     text-align: center;
 	color: #1F2937;
-	background-color: #6a9ee615;
+	
 	border-radius:10px;
 	
 	
