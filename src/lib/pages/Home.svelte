@@ -72,7 +72,7 @@ body {
 
 .neons {
    text-align: center;
-   font-family: 'Codystar';
+  
 }
 
 .neons h1 {
