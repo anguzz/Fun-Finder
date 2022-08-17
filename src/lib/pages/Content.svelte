@@ -80,8 +80,10 @@
    h1 {
     font-size: clamp(2rem, 5vw, 6rem);
     color: #6ccee7;
+	
   }
   .page-wrapper {
+	
     text-align: center;
 	color: #1F2937;
 	background-color: #1F2937;
