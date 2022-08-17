@@ -384,7 +384,7 @@
 
 #monitorscreen {
 	position: relative;
-  background-color: #777;
+  background-color: rgb(60, 61, 60);
 	background-size: cover; 
 	background-position: top center;
 	height: 0; 
