@@ -34,14 +34,10 @@
 
 		<div class="page-wrapper">
 
-			<div class="container">
-				<div class="row">
-				   <div class="neons col-12">
-					  <h1><em>Go out and have some fun!</em></h1>
-				   </div>
-				</div>
-			  </div>
-			  <br>
+			<h1 class="neonText">
+				-Go have some fun-
+			  </h1>
+			  
 
 		<select
 		bind:value={selectedOption}
@@ -311,38 +307,31 @@
 }
 /**============================title css ============================================*/
 
- @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-
-body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
+.neonText {
+	 color: #fff;
+	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+   font-size: 18px;
+	 font-family: "Yellowtail", sans-serif;
+   font-size: calc(3.5rem + 3vw);
 }
-
-.neons {
-   text-align: center;
-   
+ 
+ h1, h2 {
+	 text-align: center;
+	 font-weight: 400;
 }
-
-.neons h1 {
-  font-size: calc(1.5rem + 2vw);
-  text-align: center;
-   font-weight: bold;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
+ h1 {
+	 font-size: 5.2rem;
+	 animation: pulsate 0.11s ease-in-out infinite alternate;
 }
-
-@-webkit-keyframes glow {
-     from {
-      color: #fff;
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-  }
-  
-  to {
-     color: gray;
-    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-  }
+ h2 {
+	 font-size: 1.8rem;
+}
+ @keyframes pulsate {
+	 100% {
+		 text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #5271ff, 0 0 80px #5271ff, 0 0 90px #5271ff, 0 0 100px #5271ff, 0 0 150px #5271ff;
+	}
+	 0% {
+		 text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #5271ff, 0 0 73px #5271ff, 0 0 80px #5271ff, 0 0 94px #5271ff, 0 0 140px #5271ff;
+	}
 }
   </style>
