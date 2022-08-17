@@ -4,7 +4,6 @@ export const OPTIONS = [
       options: [
         "McDonalds",
         "Subway",
-        "DQ Grill & Chill",
         "Panda Express",
         "Canes",
         "Buffalo Wild Wings",
@@ -98,7 +97,7 @@ export const OPTIONS = [
     {
       displayText: "Dessert",
       options: [
-        "DQ ice cream",
+        "Dairy queen",
         "Afters",
         "Crumble",
         "The loop",
