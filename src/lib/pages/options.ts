@@ -19,7 +19,6 @@ export const OPTIONS = [
         "Poke",
         "Jollibee",
         "Dave's hot chicken",
-
       ],
     },
     {
@@ -35,7 +34,6 @@ export const OPTIONS = [
         "BattleBlock",
         "Human Fall Flat",
         "Castle Crashers",
-        "",
       ],
     },
     {
