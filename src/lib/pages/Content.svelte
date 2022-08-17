@@ -105,23 +105,17 @@
  
 /* ---------------------------- letter animation css-----------------------------  */
  :root {
-	 --color-primary: #f6aca2;
-	 --color-secondary: #f49b90;
-	 --color-tertiary: #f28b7d;
-	 --color-quaternary: #f07a6a;
-	 --color-quinary: #ee6352;
-	/* --color-primary: #5192ED;
-	 --color-secondary: #69A1F0;
-	 --color-tertiary: #7EAEF2;
-	 --color-quaternary: #90BAF5;
-	 --color-quinary: #A2C4F5;
-	 */
+	 --color-primary: #a2dcf6;
+	 --color-secondary: #90f1f4;
+	 --color-tertiary: #3d73b1;
+	 --color-quaternary: #6aa4f0;
+	 --color-quinary: #0c2363;
 }
  body {
 	 min-height: 100vh;
 	 font-family: canada-type-gibson, sans-serif;
 	 font-weight: 300;
-	 font-size: 1.25rem;
+	 font-size: .8rem;
 	 display: flex;
 	 flex-direction: column;
 	 justify-content: center;
@@ -133,17 +127,26 @@
 	 align-content: center;
 	 justify-content: center;
 }
- .text_shadows {
-	 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-	 font-family: bungee, sans-serif;
-	 font-weight: 400;
-	 text-transform: uppercase;
-	 font-size: calc(2rem + 5vw);
-	 text-align: center;
-	 margin: 0;
-	 color: var(--color-primary);
-	 animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-	 letter-spacing: 0.4rem;
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: calc(1.5rem + 4vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  
+  animation: shadows 2.00s ease-in infinite, move 3.2s ease-in infinite;
+
+  letter-spacing: 0.4rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
  @keyframes shadows {
 	 0% {
