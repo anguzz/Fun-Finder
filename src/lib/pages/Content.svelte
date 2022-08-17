@@ -79,7 +79,7 @@
 <style>
    h1 {
     font-size: clamp(2rem, 5vw, 6rem);
-    color: #6ce7c9;
+    color: #6ccee7;
   }
   .page-wrapper {
     text-align: center;
@@ -92,14 +92,14 @@
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     color: #1F2937;
-    border-color: #709255;
+    border-color: #558492;
     border-radius: 5px;
     font-weight: bold;
-	background-color: #7aecca;
+	background-color: #7ac2ec;
   }
   button:disabled {
     pointer-events: none;
-	background-color: #7abeec;
+	background-color: #2e70d3;
   }
   button:active {
     transform: scale(0.98);
@@ -108,8 +108,8 @@
   }
   
   button:hover {
-    background-color: #7ac8ec;
-    border-color: #8b7aec;
+    background-color: #54a0df;
+    border-color: #074183;
   }
   .selected-option {
     margin-top: 1.5rem;
