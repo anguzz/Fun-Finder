@@ -14,8 +14,8 @@
 </script>
 
 <SEO
-  title="site name"
-  description="site desc"
+  title="Fun Finder"
+  description="Go and have some fun!"
   canonical="link"
 />
 
