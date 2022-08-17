@@ -23,23 +23,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
   #bg {
     /* The image used background-image: url("/assets/images/background1.jpg"); */
