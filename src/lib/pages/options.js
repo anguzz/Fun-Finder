@@ -33,7 +33,7 @@ export const OPTIONS = [
         "Minecraft",
         "BattleBlock",
         "Human Fall Flat",
-        "Castle Crasher",
+        "Castle Crashers",
         "",
       ],
     },

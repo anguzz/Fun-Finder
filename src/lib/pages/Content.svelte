@@ -68,6 +68,7 @@
     text-align: center;
 	color: #1F2937;
 	background-color: #1F2937;
+	border-radius:10px;
   }
   button {
     cursor: pointer;
