@@ -102,6 +102,7 @@ export const OPTIONS = [
         "Donuttery",
         "Dunkin",
         "Krispy Kreme",
+        "85°C Bakery Cafe",
       ],
     },
   ];
