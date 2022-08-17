@@ -63,7 +63,6 @@ body {
 }
 
 .neons {
-   margin-top: 10rem;
    text-align: center;
 }
 
