@@ -69,6 +69,7 @@ export const OPTIONS = [
         "Aquarium",
         "The observatory",
         "Top of the world view",
+        "Clubbing/dancing",
       ],
     },
     {
