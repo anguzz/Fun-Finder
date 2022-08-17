@@ -58,7 +58,7 @@ export const OPTIONS = [
         "Hiking",
         "Science Museum",
         "Live Music",
-        "Play",
+        "Live Play",
         "Comedy Club",
         "Mall",
         "Night Drive",
