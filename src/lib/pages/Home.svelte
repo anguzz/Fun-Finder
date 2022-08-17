@@ -2,9 +2,7 @@
   import Anchor from "$lib/components/Anchor.svelte";
 
  
-  let color = "text-grey-200";
-  let hover = "sm:hover:text-primary-500";
- 
+
 </script>
 
 

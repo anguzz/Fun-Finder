@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Page from "$lib/components/Page.svelte";
+	import Anchor from "$lib/components/Anchor.svelte";
+
   import { neutralBackground } from "$lib/utils/constants";
  
   export let backgroundClass = neutralBackground;
@@ -21,63 +22,152 @@
       }
     }, 1000);
   };
-</script>
-
-<Page id="content" title=" " {backgroundClass}>
-	<div class="page-wrapper">
-		
-		<div class="container">
-			<div class="row">
-			  <div class="col-md-12 text-center">
-				<h3 class="animate-charcter"> Get some ideas to go out there and have some fun! </h3>
+  </script>
+  
+  
+  <section>
+	<Anchor id="content" />
+  <div
+	class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
+	id="bg"
+  >
+  <div class="container">
+	<div class="row">
+	   <div class="neons col-12">
 			  </div>
 			</div>
-		  </div>
 	
+
+		<div class="page-wrapper">
+
+			<h3 class="animate-charcter"> Get some ideas to go out there and have some fun! </h3><br>
+
 		<select
-		  bind:value={selectedOption}
-		  on:change={() => {
-			loading = false;
-			selectedRandomOption = "";
-		  }}	>
-		  <option value="">------</option>
-		  {#each OPTIONS as randomOption}
-			<option value={randomOption}>
-						<h2 class="text_shadows"> {randomOption.displayText}</h2>
-			</option>
-		  {/each}
-		</select>
-	
-		<button on:click={handleRandomize} disabled={!selectedOption || loading}>
-		  Randomize!
-		</button>
-	  
-		<div class="selected-option">
-		  {#if selectedRandomOption && !loading}
-		  <div class="content">
-			<h2 class="text_shadows">	{selectedRandomOption}</h2>
-		  </div>	
-		  {/if}
-		  {#if loading === true}
-		  <div class="waviy">
-			<span style="--i:1">L</span>
-			<span style="--i:2">o</span>
-			<span style="--i:3">a</span>
-			<span style="--i:4">d</span>
-			<span style="--i:5">i</span>
-			<span style="--i:6">n</span>
-			<span style="--i:7">g</span>
-		   </div>
-		
-		  {/if}
-		</div>
-	  </div>
-	  
-</Page>
-
-
-<style>
+		bind:value={selectedOption}
+		on:change={() => {
+		  loading = false;
+		  selectedRandomOption = "";
+		}}	>
+		<option value="">------</option>
+		{#each OPTIONS as randomOption}
+		  <option value={randomOption}>
+					  <h2 class="text_shadows"> {randomOption.displayText}</h2>
+		  </option>
+		{/each}
+	  </select>
   
+	  <button on:click={handleRandomize} disabled={!selectedOption || loading}>
+		Randomize!
+	  </button>
+	
+	  <div class="selected-option">
+		{#if selectedRandomOption && !loading}
+		<div class="content">
+		  <h2 class="text_shadows">	{selectedRandomOption}</h2>
+		</div>	
+		{/if}
+		{#if loading === true}
+		<div class="waviy">
+		  <span style="--i:1">L</span>
+		  <span style="--i:2">o</span>
+		  <span style="--i:3">a</span>
+		  <span style="--i:4">d</span>
+		  <span style="--i:5">i</span>
+		  <span style="--i:6">n</span>
+		  <span style="--i:7">g</span>
+		 </div>
+	  
+		{/if}
+
+	   </div>
+	</div>
+  </div>  
+  </div>
+  </section>
+  
+  <style>
+	#bg {
+	  width: 100%;
+	height: 100vh;
+	color: #fff;
+	background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+	}
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  
+  
+  @keyframes change {
+	0% {
+	  background-position: 0 50%;
+	}
+	
+	50% {
+	  background-position: 100% 50%;
+	}
+	
+	100% {
+	  background-position: 0 50%;
+	}
+  }
+   
+	/* --------------------------  title css--------------------------*/
+	@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+  
+  body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: 'Codystar';
+  }
+  
+  .neons {
+	 text-align: center;
+  }
+  
+  .neons h1 {
+	font-size: calc(3.5rem + 4vw);
+	text-align: center;
+	 font-weight: bold;
+	-webkit-animation: glow 2s ease-in-out infinite alternate;
+	-moz-animation: glow 2s ease-in-out infinite alternate;
+	animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+	   from {
+		color: #fff;
+	  text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+	}
+	
+	to {
+	   color: gray;
+	  text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+	}
+  }
+
+
+  /*----------------------------------------------- */
+  @keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0 50%;
+  }
+}
+  /*---------- */
   .page-wrapper {
 	
     text-align: center;
@@ -85,9 +175,7 @@
 	background-color: #1F2937;
 	border-radius:10px;
 	
-		padding: 0;
-		margin: 0 auto;
-		width:70%;
+	
   }
   button {
     cursor: pointer;
@@ -273,5 +361,4 @@
     background-position: 200% center;
   }
 }
-</style>
-
+  </style>
