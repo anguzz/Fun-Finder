@@ -91,7 +91,7 @@
   }
   
   button:hover {
-    background-color: #8b7aec;
+    background-color: #7ac8ec;
     border-color: #8b7aec;
   }
   .selected-option {
