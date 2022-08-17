@@ -1,20 +1,107 @@
 <script lang="ts">
-  import Link from "$lib/components/Link.svelte";
   import Page from "$lib/components/Page.svelte";
-  import Text from "$lib/components/Text.svelte";
   import { primaryBackground } from "$lib/utils/constants";
-
+ 
   export let backgroundClass = primaryBackground;
+
+  import {OPTIONS} from "$lib/pages/options.js";
+  let selectedOption: { options: string|any[]; };
+  let selectedRandomOption: string;
+  let loading = false;
+
+  const handleRandomize = () => {
+    loading = true;
+    setTimeout(() => {
+      loading = false;
+      if (selectedOption) {
+        selectedRandomOption =
+          selectedOption.options[
+            Math.floor(Math.random() * selectedOption.options.length)
+          ];
+      }
+    }, 1000);
+  };
 </script>
 
 <Page id="content" title=" " {backgroundClass}>
-  <Text>
-    
-  </Text>
+	<div class="page-wrapper">
+		<h1>Fun Finder</h1>
+		<select
+		  bind:value={selectedOption}
+		  on:change={() => {
+			loading = false;
+			selectedRandomOption = "";
+		  }}	>
+		  <option value="">-- Choose an Option --</option>
+		  {#each OPTIONS as randomOption}
+			<option value={randomOption}>
+			
+						<h2 class="text_shadows"> {randomOption.displayText}</h2>
+		
+			</option>
+		  {/each}
+		</select>
+	  
+		<button on:click={handleRandomize} disabled={!selectedOption || loading}>
+		  Randomize!
+		</button>
+	  
+		<div class="selected-option">
+		  {#if selectedRandomOption && !loading}
+			{selectedRandomOption}
+		  {/if}
+		  {#if loading === true}
+			<p>Randomizing...</p>
+		  {/if}
+		</div>
+	  </div>
+	  
 </Page>
 
 
 <style>
+   h1 {
+    font-size: clamp(2rem, 5vw, 6rem);
+    color: #6ce7c9;
+  }
+  .page-wrapper {
+    text-align: center;
+	color: #1F2937;
+	background-color: #1F2937;
+  }
+  button {
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    color: #1F2937;
+    border-color: #709255;
+    border-radius: 5px;
+    font-weight: bold;
+	background-color: #7aecca;
+  }
+  button:disabled {
+    pointer-events: none;
+	background-color: #7abeec;
+  }
+  button:active {
+    transform: scale(0.98);
+	color:#08415c;
+	background-color: #7ac8ec;
+  }
   
+  button:hover {
+    background-color: #8b7aec;
+    border-color: #8b7aec;
+  }
+  .selected-option {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #85f0b5;
+    font-weight: 600;
+	
+  }
+
+ 
+
 </style>
 
