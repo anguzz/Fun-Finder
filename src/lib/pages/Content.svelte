@@ -90,7 +90,7 @@
 	  width: 100%;
 	height: 100vh;
 	color: #fff;
-	background-image: url("bricks.background.jpg");
+	background-image: url("/src/bricks.jpg");
 	background-size: 120% 120%;
 	position: relative;
 	animation: change 10s ease-in-out infinite;
