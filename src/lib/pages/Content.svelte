@@ -25,14 +25,22 @@
 
 <Page id="content" title=" " {backgroundClass}>
 	<div class="page-wrapper">
-		<h1>Fun Finder</h1>
+		
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12 text-center">
+				<h3 class="animate-charcter"> Fun Finder</h3>
+			  </div>
+			</div>
+		  </div>
+	
 		<select
 		  bind:value={selectedOption}
 		  on:change={() => {
 			loading = false;
 			selectedRandomOption = "";
 		  }}	>
-		  <option value="">-- Choose an Option --</option>
+		  <option value="">------</option>
 		  {#each OPTIONS as randomOption}
 			<option value={randomOption}>
 						<h2 class="text_shadows"> {randomOption.displayText}</h2>
@@ -51,7 +59,16 @@
 		  </div>	
 		  {/if}
 		  {#if loading === true}
-			<p>Randomizing...</p>
+		  <div class="waviy">
+			<span style="--i:1">L</span>
+			<span style="--i:2">o</span>
+			<span style="--i:3">a</span>
+			<span style="--i:4">d</span>
+			<span style="--i:5">i</span>
+			<span style="--i:6">n</span>
+			<span style="--i:7">g</span>
+		   </div>
+		
 		  {/if}
 		</div>
 	  </div>
@@ -103,7 +120,7 @@
   }
 
  
-/* ---------------------------- letter animation css-----------------------------  */
+/* ---------------------------- chosen place animation css-----------------------------  */
  :root {
 	 --color-primary: #a2dcf6;
 	 --color-secondary: #90f1f4;
@@ -133,7 +150,7 @@
   font-family: bungee, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  font-size: calc(1.5rem + 4vw);
+  font-size: calc(1.5rem + 3vw);
   text-align: center;
   margin: 0;
   color: var(--color-primary);
@@ -199,6 +216,60 @@
 	 100% {
 		 transform: translate(0px, 0px);
 	}
+}
+/**loading animation */
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: rgb(131, 196, 250);
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+/**============================title css ============================================*/
+.animate-charcter
+{
+	
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #319be2 0%,
+    #22c1dd 29%,
+    #132bff 67%,
+    #91def1 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: calc(1.5rem + 3vw);
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 </style>
 
