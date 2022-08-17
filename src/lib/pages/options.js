@@ -1,6 +1,6 @@
 export const OPTIONS = [
     {
-      displayText: "Food",
+      displayText: "Fast/casual Food",
       options: [
         "Chipotle",
         "McDonalds",
