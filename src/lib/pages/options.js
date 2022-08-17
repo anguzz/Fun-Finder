@@ -22,7 +22,7 @@ export const OPTIONS = [
       ],
     },
     {
-      displayText: "Games",
+      displayText: "Video-Games",
       options: [
         "Mario Party",
         "Mario Kart",

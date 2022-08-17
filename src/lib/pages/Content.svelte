@@ -29,7 +29,7 @@
 		<div class="container">
 			<div class="row">
 			  <div class="col-md-12 text-center">
-				<h3 class="animate-charcter"> Fun Finder</h3>
+				<h3 class="animate-charcter"> Get some ideas to go out there and have some fun! </h3>
 			  </div>
 			</div>
 		  </div>
@@ -267,7 +267,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: calc(1.5rem + 3vw);
+  font-size: calc(1.5rem + 1vw);
 }
 
 @keyframes textclip {

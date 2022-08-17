@@ -12,9 +12,13 @@
   class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
   id="bg"
 >
-  <div class="text-center">
-    <h1 class="text-5xl m-6 {color} font-light"> Welcome! </h1>
+<div class="container">
+  <div class="row">
+     <div class="neons col-12">
+        <h1><em>Fun Finder</em></h1>
+     </div>
   </div>
+</div>
 
 </div>
 
@@ -45,21 +49,42 @@
     
   }
 
-  .text-2{
-  font-size: 1.8rem;  
-  margin: 0rem;
-  margin-top: 0rem;
-  font-weight: 200;
-  line-height: 3rem;
-  color:rgb(215, 219, 223);
- }    
  
-  .subtitle {
-    font-size: 1.8rem; 
-     margin: 0rem;
-    font-weight: 200;
-    color:rgb(215, 219, 223);
-    padding-left: 3vw;
-    
+  /*  */
+  @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
+   background: black;
+   background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.neons {
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 9rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
   }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
 </style>
