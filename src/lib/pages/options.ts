@@ -19,6 +19,7 @@ export const OPTIONS = [
         "Poke",
         "Jollibee",
         "Dave's hot chicken",
+
       ],
     },
     {
@@ -47,7 +48,8 @@ export const OPTIONS = [
         "Kbbq",
         "Shabu Shabu",
         "Boiling Point",
-        "Zubies Dry Dock"
+        "Zubies Dry Dock",
+        "Red flame",
       ],
     },
     {
