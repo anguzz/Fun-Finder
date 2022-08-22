@@ -100,7 +100,7 @@
 	background-image: url("/src/bricks.jpg");
 	background-size: 120% 120%;
 	position: relative;
-	animation: change 10s ease-in-out infinite;
+	
 	}
 	* {
 	margin: 0;
