@@ -41,6 +41,9 @@ export const OPTIONS = [
         "Castle Crashers",
         "Uno",
         "Gartic Phone",
+        "Roblox",
+        "Pokemon Go",
+        "Path of exile",
       ],
     },
     {
@@ -89,6 +92,11 @@ export const OPTIONS = [
         "Mission Control",
         "TwoBit Circus",
         "Ikea",
+        "Painting",
+        "Picnic",
+        "Beach",
+        "Bad movie night",
+        "Cake decorating",
       ],
     },
     {
