@@ -88,7 +88,7 @@ export const OPTIONS = [
         "Clubbing/dancing",
         "Mission Control",
         "TwoBit Circus",
-        
+        "Ikea",
       ],
     },
     {
