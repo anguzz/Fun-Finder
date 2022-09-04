@@ -40,6 +40,7 @@ export const OPTIONS = [
         "Human Fall Flat",
         "Castle Crashers",
         "Uno",
+        "Gartic Phone",
       ],
     },
     {
