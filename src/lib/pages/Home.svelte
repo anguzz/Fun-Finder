@@ -62,8 +62,8 @@
  
   /* --------------------------  title css--------------------------*/
   .neonText {
-	 color: #fff;
-	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+	 color: #1d448b;
+	 text-shadow: 0 0 7px #3670c7#3670c7, 0 0 21px #3670c7, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 18px;
 	 font-family: "Yellowtail", sans-serif;
    font-size: calc(3.5rem + 6vw);
@@ -80,12 +80,5 @@
  h2 {
 	 font-size: 1.8rem;
 }
- @keyframes pulsate {
-	 100% {
-		 text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #5271ff, 0 0 80px #5271ff, 0 0 90px #5271ff, 0 0 100px #5271ff, 0 0 150px #5271ff;
-	}
-	 0% {
-		 text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #5271ff, 0 0 73px #5271ff, 0 0 80px #5271ff, 0 0 94px #5271ff, 0 0 140px #5271ff;
-	}
-}
+
 </style>

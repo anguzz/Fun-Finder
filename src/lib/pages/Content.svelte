@@ -110,19 +110,7 @@
   
   
   
-  @keyframes change {
-	0% {
-	  background-position: 0 50%;
-	}
-	
-	50% {
-	  background-position: 100% 50%;
-	}
-	
-	100% {
-	  background-position: 0 50%;
-	}
-  }
+  
    
 	/* --------------------------  title css--------------------------*/
 	@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
@@ -135,33 +123,10 @@
   }
   
   
-  @-webkit-keyframes glow {
-	   from {
-		color: #fff;
-	  text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-	}
-	
-	to {
-	   color: gray;
-	  text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-	}
-  }
 
 
   /*----------------------------------------------- */
-  @keyframes change {
-  0% {
-    background-position: 0 50%;
-  }
   
-  50% {
-    background-position: 100% 50%;
-  }
-  
-  100% {
-    background-position: 0 50%;
-  }
-}
   /*---------- */
   .page-wrapper {
 	
@@ -240,41 +205,7 @@
   -ms-user-select: none;
   user-select: none;
 }
- @keyframes shadows {
-	 0% {
-		 text-shadow: none;
-	}
-	 10% {
-		 text-shadow: 3px 3px 0 var(--color-secondary);
-	}
-	 20% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-	}
-	 30% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-	}
-	 40% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-	}
-	 50% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-	}
-	 60% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-	}
-	 70% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-	}
-	 80% {
-		 text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
-	}
-	 90% {
-		 text-shadow: 3px 3px 0 var(--color-secondary);
-	}
-	 100% {
-		 text-shadow: none;
-	}
-}
+ 
  @keyframes move {
 	 0% {
 		 transform: translate(0px, 0px);
@@ -319,8 +250,8 @@
 /**============================title css ============================================*/
 
 .neonText {
-	 color: #fff;
-	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+	color: #1d448b;
+	 text-shadow: 0 0 7px #3670c7#3670c7, 0 0 21px #3670c7, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 18px;
 	 font-family: "Yellowtail", sans-serif;
    font-size: calc(3.5rem + 3vw);
@@ -337,14 +268,7 @@
  h2 {
 	 font-size: 1.8rem;
 }
- @keyframes pulsate {
-	 100% {
-		 text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #5271ff, 0 0 80px #5271ff, 0 0 90px #5271ff, 0 0 100px #5271ff, 0 0 150px #5271ff;
-	}
-	 0% {
-		 text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #5271ff, 0 0 73px #5271ff, 0 0 80px #5271ff, 0 0 94px #5271ff, 0 0 140px #5271ff;
-	}
-}
+
 
 
 
