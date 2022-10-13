@@ -257,16 +257,11 @@
    font-size: calc(3.5rem + 3vw);
 }
  
- h1, h2 {
-	 text-align: center;
-	 font-weight: 400;
-}
- h1 {
-	 font-size: 5.2rem;
-	 animation: pulsate 0.11s ease-in-out infinite alternate;
-}
- h2 {
-	 font-size: 1.8rem;
+h1 {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 
@@ -275,11 +270,6 @@
 /**============================monitor css ============================================*/
 
 
-
-#container {
-  max-width: 1024px;
-  margin: auto;
-}
 
 #monitor {
 	background: #000; 
