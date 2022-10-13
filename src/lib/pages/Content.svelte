@@ -93,6 +93,8 @@
   </section>
   
   <style>
+		@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
 	#bg {
 	  width: 100%;
 	height: 100vh;
@@ -113,15 +115,8 @@
   
    
 	/* --------------------------  title css--------------------------*/
-	@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
   
-  body {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 font-family: 'Codystar';
-  }
-  
+
   
 
 
