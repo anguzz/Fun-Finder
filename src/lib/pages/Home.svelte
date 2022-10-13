@@ -62,7 +62,7 @@
  
   /* --------------------------  title css--------------------------*/
   .neonText {
-	 color: #1d448b;
+	 color: #60b8e0;
 	 text-shadow: 0 0 7px #3670c7#3670c7, 0 0 21px #3670c7, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 18px;
 	 font-family: "Yellowtail", sans-serif;
