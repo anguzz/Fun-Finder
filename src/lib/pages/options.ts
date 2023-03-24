@@ -23,6 +23,7 @@ export const OPTIONS = [
         "Katsu Bar",
         "Nguyen's Kitchen",
         "Mr Katsu",
+        "Philly's Best"
       ],
     },
     {
@@ -67,6 +68,7 @@ export const OPTIONS = [
         "Playa Mesa",
         "Din-Tai Fung",
         "Omoi Sushi",
+        "Stonefire Grill"
       ],
     },
     {
@@ -135,7 +137,7 @@ export const OPTIONS = [
         "Mochi-Donuts",
         "Cold Stone",
         "Baskin-Robins",
-        
+        "Seaside Donuts Bakery"
       ],
     },
   ];
