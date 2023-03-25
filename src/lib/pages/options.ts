@@ -23,7 +23,8 @@ export const OPTIONS = [
         "Katsu Bar",
         "Nguyen's Kitchen",
         "Mr Katsu",
-        "Philly's Best"
+        "Philly's Best",
+        "Gus's World Famous Fried Chicken",
       ],
     },
     {
