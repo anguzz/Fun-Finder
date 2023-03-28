@@ -25,6 +25,7 @@ export const OPTIONS = [
         "Mr Katsu",
         "Philly's Best",
         "Gus's World Famous Fried Chicken",
+        "Wingferno"
       ],
     },
     {
@@ -46,6 +47,7 @@ export const OPTIONS = [
         "Roblox",
         "Pokemon Go",
         "Path of exile",
+        "Deep Rock Galactic"
       ],
     },
     {
