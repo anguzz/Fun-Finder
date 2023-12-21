@@ -25,7 +25,8 @@ export const OPTIONS = [
         "Mr Katsu",
         "Philly's Best",
         "Gus's World Famous Fried Chicken",
-        "Wingferno"
+        "Wingferno",
+        "Papa's sandwiches"
       ],
     },
     {
@@ -71,11 +72,13 @@ export const OPTIONS = [
         "Playa Mesa",
         "Din-Tai Fung",
         "Omoi Sushi",
-        "Stonefire Grill"
+        "Stonefire Grill",
+        "Texas De Brazil"
+
       ],
     },
     {
-      displayText: "Date ideas",
+      displayText: "Date/activity ideas",
       options: [
         "Hiking",
         "Science Museum",
@@ -96,12 +99,16 @@ export const OPTIONS = [
         "Clubbing/dancing",
         "Mission Control",
         "TwoBit Circus",
+        "The Paradox Arcade Bar",
+        "Cherry Pit dive bar & ping pong",
         "Ikea",
         "Painting",
         "Picnic",
         "Beach",
         "Bad movie night",
         "Cake decorating",
+        "Whale watching on a Boat",
+        "Take a train to another city",
       ],
     },
     {
@@ -141,6 +148,19 @@ export const OPTIONS = [
         "Cold Stone",
         "Baskin-Robins",
         "Seaside Donuts Bakery"
+      ],
+    },
+    {
+      displayText: "Late night food",
+      options: [
+        "Canes",
+        "In-n-Out",
+        "Local taco truck",
+        "Dave's hot chicken",
+        "Nguyens Kitchen",
+        "Ben's Fast food",
+        "Oromori Japanese Kitchen",
+
       ],
     },
   ];
